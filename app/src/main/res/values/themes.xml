@@ -1,6 +1,7 @@
 
 <resources>
     <style name="Theme.Shopify" parent="Theme.Material3.Light.NoActionBar">
+        <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
         <item name="colorPrimary">@color/seed</item>
         <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
