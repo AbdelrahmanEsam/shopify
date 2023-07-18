@@ -34,5 +34,14 @@
         android:id="@+id/checkOutFragment"
         android:name="com.example.shopify.checkout.presentation.CheckOutFragment"
         android:label="CheckOutFragment"
-        tools:layout="@layout/fragment_check_out"/>
+        tools:layout="@layout/fragment_check_out">
+        <action
+            android:id="@+id/action_checkOutFragment_to_emailDialogFragment"
+            app:destination="@id/emailDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/emailDialogFragment"
+        android:name="com.example.shopify.checkout.presentation.EmailDialogFragment"
+        android:label="fragment_email_dialog"
+        tools:layout="@layout/fragment_email_dialog" />
 </navigation>

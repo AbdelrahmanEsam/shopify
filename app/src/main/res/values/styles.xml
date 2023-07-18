@@ -55,4 +55,13 @@
         <item name="android:textColor">@color/text_color</item>
     </style>
 
+
+
+
+
+
+    <style name="RoundedCornersDialog" parent="@style/Theme.MaterialComponents.Dialog">
+        <item name="dialogCornerRadius">@dimen/_15sdp</item>
+    </style>
+
 </resources>
