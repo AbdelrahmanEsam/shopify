@@ -1,6 +1,5 @@
 package com.example.shopify.settings.presenation.address.map
 
-import android.location.Address
 import android.location.Geocoder
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -16,8 +15,6 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.example.shopify.R
 import com.example.shopify.databinding.FragmentAddressBinding
-import com.example.shopify.settings.presenation.address.write.WriteAddressIntent
-import com.example.shopify.utils.getAddress
 import com.example.shopify.utils.snackBarObserver
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -62,7 +59,12 @@ class AddressFragment(private val englishGeoCoder: Geocoder) : Fragment() {
         binding.go.setOnClickListener {
             with(viewModel.state.value) {
                 if (!latitude.isNullOrBlank()){
-                navController.navigate(AddressFragmentDirections.actionAddressFragmentToWriteAddressFragment(latitude,longitude!!))
+                navController.navigate(
+                    AddressFragmentDirections.actionAddressFragmentToWriteAddressFragment(
+                        latitude,
+                        longitude!!
+                    )
+                )
                 }else{
                     Toast.makeText(requireContext(), getString(R.string.please_choose_your_address_location), Toast.LENGTH_SHORT).show()
                 }

@@ -1,4 +1,4 @@
-package com.example.shopify.settings.presenation.address.location
+package com.example.shopify.settings.presenation.address.map
 
 sealed interface AddressIntent {
 

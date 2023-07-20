@@ -5,7 +5,6 @@ plugins {
     id("dagger.hilt.android.plugin")
     id("androidx.navigation.safeargs")
     id("com.google.gms.google-services")
-    id("com.google.devtools.ksp")
 }
 
 android {
@@ -62,7 +61,6 @@ android {
     buildFeatures {
         viewBinding = true
         buildConfig = true
-        dataBinding = true
     }
 }
 
@@ -85,7 +83,7 @@ dependencies {
     implementation(libs.com.firebaseui.firebase.ui.auth)
     implementation(libs.com.google.firebase.firebase.firestore.kts)
     implementation("com.google.firebase:firebase-storage-ktx:20.2.1")
-    ksp(libs.androidx.room.compiler)
+    kapt(libs.androidx.room.compiler)
     kapt(libs.com.google.dagger.hilt.compiler)
     kapt(libs.androidx.hilt.hilt.compiler)
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.2")
