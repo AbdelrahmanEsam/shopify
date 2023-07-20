@@ -47,7 +47,7 @@ class SettingsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navController = findNavController()
         binding.addressRightArrowImageView.setOnClickListener {
-            navController.navigate(SettingsFragmentDirections.actionSettingsFragmentToAddressFragment())
+            navController.navigate(SettingsFragmentDirections.actionSettingsFragmentToAllAddressesFragment())
         }
 
         binding.accountRightArrowImageView.setOnClickListener {
