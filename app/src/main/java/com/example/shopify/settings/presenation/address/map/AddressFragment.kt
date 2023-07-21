@@ -29,7 +29,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 @AndroidEntryPoint
-class AddressFragment(private val englishGeoCoder: Geocoder) : Fragment() {
+class AddressFragment() : Fragment() {
 
     private lateinit var binding: FragmentAddressBinding
 
